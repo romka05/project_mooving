@@ -1,1 +1,20 @@
+$bg: #fed100;
+$text: #333333;
+$red: #ff352b;
 
+@mixin f400 {
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+}
+@mixin f500 {
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+}
+@mixin f600 {
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+}
+@mixin f700 {
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+}
