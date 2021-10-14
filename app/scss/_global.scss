@@ -25,10 +25,14 @@ body {
   overflow-x: hidden;
   font-size: 16px;
   color: $text;
+  @include f400;
 }
 
 .container {
   max-width: 1300px;
   margin: 0 auto;
   padding: 0 10px;
+}
+.how-it__wrapper {
+  padding: 0px 85px;
 }

@@ -2,6 +2,10 @@ $bg: #fed100;
 $text: #333333;
 $red: #ff352b;
 
+@mixin f300 {
+  font-weight: 300;
+  font-family: "Montserrat", sans-serif;
+}
 @mixin f400 {
   font-weight: 400;
   font-family: "Montserrat", sans-serif;

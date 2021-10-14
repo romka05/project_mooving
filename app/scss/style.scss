@@ -9,6 +9,7 @@
   background-position: center;
   background-repeat: no-repeat;
   min-height: 650px;
+  box-shadow: 0px 6px 5px -4px rgba(34, 60, 80, 0.23);
 }
 .header__top-inner {
   display: flex;
@@ -19,6 +20,7 @@
 .header__logo {
   font-size: 30px;
   line-height: 37px;
+  color: $text;
   @include f600;
 }
 .header__menu-links {
@@ -159,6 +161,52 @@
 }
 
 // end header
+
+// start how-it
+.how-it__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 66px;
+  width: 100%;
+}
+.how-it__title {
+  text-align: center;
+  padding-top: 95px;
+  font-size: 30px;
+  line-height: 37px;
+}
+.how-it__inner-item {
+  display: flex;
+  max-width: 490px;
+  width: 50%;
+  margin-bottom: 70px;
+}
+.how-it__content-box {
+  padding-left: 40px;
+  padding-top: 5px;
+}
+.how-it__content-title {
+  max-width: 386px;
+  width: 100%;
+  font-size: 20px;
+  line-height: 24px;
+  @include f500;
+  margin-bottom: 15px;
+}
+.how-it__content-number {
+  font-size: 50px;
+  @include f300;
+  text-shadow: 2px 0px 2px $bg;
+}
+.how-it__content-text {
+  font-size: 16px;
+  line-height: 21px;
+  max-width: 390px;
+  width: 100%;
+}
+
+// end how-it
 
 // адаптив
 @import "media";
