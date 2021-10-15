@@ -39,6 +39,7 @@ gulp.task("style", function () {
       "node_modules/normalize.css/normalize.css",
       "node_modules/slick-carousel/slick/slick.css",
       "node_modules/wow.js/css/libs/animate.css",
+      "app/css/jquery.rateyo.css",
     ])
     .pipe(concat("libs.min.css"))
     .pipe(cssmin())
@@ -53,6 +54,7 @@ gulp.task("script", function () {
       .src([
         "node_modules/slick-carousel/slick/slick.js",
         "node_modules/wow.js/dist/wow.js",
+        "app/js/jquery.rateyo.js",
       ])
       .pipe(concat("libs.min.js"))
       .pipe(uglify())
