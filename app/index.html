@@ -17,8 +17,8 @@
 
 <body>
   <!-- start heade -->
-  <div class="header__wrapper">
-    <header class="header">
+  <div class="header__wrapper  ">
+    <header class="header parallax-window" data-parallax="scroll" data-image-src="img/header_bg.jpg">
       <div class="container">
         <div class="header__top">
           <div class="header__top-inner">
@@ -41,6 +41,9 @@
             </div>
             <div class="header__phone">
               <a href="tel:0933565999">093-35-65-999</a>
+            </div>
+            <div class="header__burger">
+              <span></span>
             </div>
           </div>
           <div class="header__content-inner">
@@ -85,7 +88,7 @@
   <!-- end header -->
 
   <!-- start how it -->
-  <section class="how-it">
+  <section class="how-it parallax-window" data-parallax="scroll">
     <div class="container">
       <div class="how-it__title">
         Как это происходит?
@@ -129,14 +132,14 @@
   </section>
   <!-- end how it -->
   <!-- start price  -->
-  <section class="price">
+  <!-- <section class="price">
     <div class="container">
       <div class="price__title">
         Цены
         <span>Фиксированная стоимость на переезд под ключ </span>
       </div>
       <div class="price__inner">
-        <div class="price__item">
+        <div class="price__item easeBox" data-timing="sineInOut">
           <div class="price__item-title">1-комнатная кв-ра</div>
           <div class="price__item-text">
             <p>1 фургон</p>
@@ -146,7 +149,7 @@
           <div class="price__item-cost">1500 грн</div>
           <button class="price__item-btn">Заказать</button>
         </div>
-        <div class="price__item">
+        <div class="price__item easeBox" data-timing="backInOut">
           <div class="price__item-title">2-комнатная кв-ра</div>
           <div class="price__item-text">
             <p>1 газель - 3 метра</p>
@@ -156,7 +159,7 @@
           <div class="price__item-cost">2000 грн</div>
           <button class="price__item-btn">Заказать</button>
         </div>
-        <div class="price__item">
+        <div class="price__item easeBox" data-timing="quintOut">
           <div class="price__item-title">3-комнатная кв-ра </div>
           <div class="price__item-text">
             <p>1 газель - 4 метра</p>
@@ -168,10 +171,10 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
   <!-- end price  -->
   <!-- start slider   -->
-  <section class="slider">
+  <!-- <section class="slider">
     <div class="container">
       <div class="slider__title">10 видов автомобилей от 800 кг до 10 тонн</div>
       <div class="slider__links">
@@ -225,11 +228,11 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
   <!-- end slider   -->
 
   <!-- start feedback  -->
-  <section class="feedback">
+  <!-- <section class="feedback">
     <div class="container">
       <div class="feedback__title">
         Отзывы
@@ -280,9 +283,110 @@
         <a href="#" class="feedback__link">Все отзывы</a>
       </div>
     </div>
-  </section>
+  </section> -->
   <!-- ebd feedback  -->
-
+  <!-- strt buy   -->
+  <!-- <section class="buy">
+    <div class="container">
+      <div class="buy__inner">
+        <form class="buy__form">
+          <div class="buy__form-title">Закажи переезд прямо сейчас</div>
+          <span>Мы перезвоним в течении 10 секунд</span>
+          <div class="buy__form-row">
+            <input class="name" type="text" placeholder="Ваше имя">
+            <input class="phone" type="text" placeholder="Телефон">
+            <div class="buy_btn-box">
+              <button class="buy_btn">Перезвонить мне</button>
+              <div class="buy_btn-shadow"></div>
+              <div class="buy__form-check">
+                <input class="check" type="checkbox" id="scales" checked>
+                <label>Даю согласие на обработку данных</label>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section> -->
+  <!-- end buy   -->
+  <!-- start map  -->
+  <!-- <section class="map">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2564.0318132975926!2d36.21483331593828!3d50.010758926829276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a11877e103ab%3A0xc74fae7736d6b145!2z0JHRg9C00LzQtdC9!5e0!3m2!1sru!2sua!4v1635693735077!5m2!1sru!2sua"
+      width="100%" height="666" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <div class="container">
+      <div class="map__inner">
+        <div class="map__card">
+          <div class="map__card-content">
+            <div class="map__card-title">
+              MOVEE
+            </div>
+            <p class="map__card-info">
+              Харків, вулиця Клочківська, 119а</p>
+            <p class="map__card-info">093-35-65-999</p>
+            <a class="map__card-info">movee@gmail.com</a>
+            <div class="map__card-row">
+              <div class="map__card_social-links">
+                <a href="#"><img src="img/youtube.svg" alt="youtube"></a>
+                <a href="#"><img src="img/vk.svg" alt="vkontakte"></a>
+                <a href="#"><img src="img/fb.svg" alt="facebook"></a>
+                <a href="#"><img src="img/insta.svg" alt="instagram"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+  <!-- end map  -->
+  <!-- start footer -->
+  <!-- <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__content">
+          <div class="footer__logo">MOVEE</div>
+          <span>Политика
+            конфиденциальнности</span>
+          <span>Соглашение на обработку персональных данных</span>
+        </div>
+        <div class="footer__links">
+          <ul class="footer__menu-links">
+            <li>
+              <a href="#" class="footer__menu-link">Главная</a>
+            </li>
+            <li>
+              <a href="#" class="footer__menu-link">Цены</a>
+            </li>
+            <li>
+              <a href="#" class="footer__menu-link">Автопарк</a>
+            </li>
+            <li>
+              <a href="#" class="footer__menu-link">Отзывы</a>
+            </li>
+            <li>
+              <a href="#" class="footer__menu-link">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__social-col">
+          <div class="foooter__social-links">
+            <a href="#"><img src="img/youtube.svg" alt="youtube"></a>
+            <a href="#"><img src="img/vk.svg" alt="vkontakte"></a>
+            <a href="#"><img src="img/fb.svg" alt="facebook"></a>
+            <a href="#"><img src="img/insta.svg" alt="instagram"></a>
+          </div>
+          <a class="footer__mail-link" href="#">movee@gmail.com</a>
+        </div>
+        <div class="footer__phone-col">
+          <a class="footer__phone-btn">Обратный звонок</a>
+          <div class="footer__phone">
+            <a href="tel:0933565999">093-35-65-999</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer> -->
+  <!-- start footer -->
 
   <!-- jquery CDN google -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

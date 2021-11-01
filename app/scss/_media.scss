@@ -1,0 +1,148 @@
+@media (max-width: 1150px) {
+  .header__content-descr-box {
+    display: none;
+  }
+  .header_phone-link {
+    display: none;
+  }
+}
+@media (max-width: 1075px) {
+  .how-it__inner {
+    display: block;
+  }
+  .how-it__inner-item {
+    margin: 0px auto 50px;
+  }
+}
+@media (max-width: 990px) {
+  .how-it__inner-item {
+    width: 100%;
+  }
+  .how-it__inner {
+    padding-top: 45px;
+  }
+  .how-it__title {
+    padding-top: 40px;
+  }
+}
+@media (max-width: 920px) {
+  .header {
+    padding-top: 20px;
+  }
+  .header__title {
+    font-size: 26px;
+    line-height: 22px;
+    span {
+      font-size: 18px;
+    }
+  }
+  .header__menu-links li + li {
+    margin-left: 30px;
+  }
+}
+@media (max-width: 780px) {
+  .header {
+    min-height: 450px;
+  }
+  .header__phone {
+    display: none;
+  }
+  .header_btn-box {
+    box-shadow: none;
+    border: none;
+    margin: 0;
+  }
+  .header_btn {
+    padding: 16px 60px;
+    font-size: 18px;
+    left: 0;
+  }
+}
+@media (max-width: 600px) {
+  .header {
+    padding-top: 20px;
+  }
+  .header__top-inner {
+    margin-bottom: 110px;
+  }
+  .header__title {
+    max-width: 260px;
+    font-size: 18px;
+    line-height: 16px;
+    span {
+      margin-bottom: 30px;
+      line-height: 24px;
+      font-size: 16px;
+    }
+  }
+  .header__burger {
+    display: block;
+  }
+  .header__menu-links {
+    border-top: 1px solid $text;
+    display: block;
+    position: absolute;
+    top: 70px;
+    left: -200%;
+    width: 100%;
+    text-align: center;
+    background-color: $bg;
+    z-index: 10;
+    li + li {
+      margin: 0;
+    }
+    li {
+      margin: 0;
+      border-bottom: 1px solid $text;
+      padding-top: 8px;
+    }
+  }
+  .header__menu-links.active {
+    left: 0;
+    transition: all 0.5s;
+  }
+}
+@media (max-width: 550px) {
+  .header__content {
+    max-width: 230px;
+  }
+  .header__title {
+    line-height: 20px;
+    span {
+      line-height: 18px;
+      font-size: 14px;
+    }
+  }
+  .header_btn {
+    font-size: 14px;
+    padding: 14px 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .header__content {
+    max-width: 150px;
+    position: absolute;
+    top: 130px;
+  }
+  .header__title {
+    font-size: 14px;
+    line-height: 16px;
+    span {
+      font-size: 12px;
+    }
+  }
+  .how-it__content-box {
+    padding-left: 15px;
+    padding-top: 5px;
+  }
+  .how-it__title {
+    font-size: 24px;
+  }
+}
+@media (max-width: 350px) {
+  .header_btn {
+    font-size: 12px;
+    padding: 10px 27px;
+  }
+}

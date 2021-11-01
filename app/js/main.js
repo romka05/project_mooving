@@ -42,4 +42,31 @@ $(function () {
     }
     return false;
   });
+
+  const easeBoxes = [];
+  document.querySelectorAll(".easeBox").forEach((elem, i) => {
+    const timing = elem.getAttribute("data-timing");
+    easeBoxes.push(
+      basicScroll.create({
+        elem: elem,
+        from: "middle-bottom",
+        to: "bottom-top",
+        direct: true,
+        props: {
+          "--ty": {
+            from: "0",
+            to: "100px",
+            timing: timing,
+          },
+        },
+      })
+    );
+  });
+  easeBoxes.forEach((easeBox) => easeBox.start());
+
+  $('input[type="checkbox"], select').styler();
+
+  $(".header__burger").on("click", function () {
+    $(".header__burger, .header__menu-links").toggleClass("active");
+  });
 });
