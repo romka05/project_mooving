@@ -452,6 +452,46 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+.aria-label {
+  display: none;
+}
+.slider__inner-box {
+  padding-bottom: 20px;
+}
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  li button {
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    background-color: $text;
+    color: transparent;
+    width: 16px;
+    height: 16px;
+  }
+  li + li {
+    margin-left: 10px;
+  }
+}
+.slider .slick-dots li.slick-active button {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  padding: 5px;
+  &::after {
+    position: absolute;
+    content: "";
+    border: 2px solid $bg;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    left: -5px;
+    top: -5px;
+    transform: rotate(-90deg);
+  }
+}
 
 // start feedback
 .feedback {

@@ -6,6 +6,15 @@ $(function () {
     arrows: true,
     slidesToShow: 1,
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1300,
+        settings: {
+          arrows: false,
+          dots: true,
+        },
+      },
+    ],
   });
 
   $(".rate-star").rateYo({
