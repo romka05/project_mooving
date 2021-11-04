@@ -172,7 +172,8 @@
   display: inline-block;
 }
 .header_btn-box {
-  width: 304px;
+  max-width: 304px;
+  width: 100%;
   height: 60px;
   border: 2px solid #f2f2f2;
   margin-left: 10px;
@@ -462,14 +463,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  li {
+    display: flex;
+  }
   li button {
     cursor: pointer;
     border: none;
-    border-radius: 50%;
+    border-radius: 20px;
     background-color: $text;
     color: transparent;
-    width: 16px;
-    height: 16px;
+    width: 15px;
+    height: 15px;
+    padding: 5px;
+    outline: none;
   }
   li + li {
     margin-left: 10px;
@@ -480,6 +486,7 @@
   height: 20px;
   position: relative;
   padding: 5px;
+
   &::after {
     position: absolute;
     content: "";
@@ -489,7 +496,6 @@
     height: 30px;
     left: -5px;
     top: -5px;
-    transform: rotate(-90deg);
   }
 }
 
@@ -514,6 +520,9 @@
 }
 .feedback__item {
   max-width: 400px;
+  button {
+    color: $text;
+  }
 }
 .feedback__item-name {
   font-size: 24px;
