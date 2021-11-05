@@ -1,90 +1,81 @@
 $(function () {
-  $(".rate-star").rateYo({
-    rating: 5,
-    starWidth: "12px",
-    readOnly: true,
-  });
+  new WOW().init();
 
-  $(".product-slider__inner").slick({
-    arrows: false,
-    dots: true,
-    slidesToShow: 4,
-    slidesToScroll: 4,
+  $(".slider__inner-box").slick({
+    dots: false,
+    arrows: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 1900,
+        breakpoint: 1300,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
+          arrows: false,
           dots: true,
-        },
-      },
-      {
-        breakpoint: 1470,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 1250,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
         },
       },
     ],
   });
 
-  $(".js-range-slider").ionRangeSlider({
-    type: "double",
-    min: 0,
-    max: 1000,
-    from: 0,
-    to: 600,
-    prefix: "$",
+  $(".rate-star").rateYo({
+    starWidth: "15px",
+    ratedFill: "#FF352B",
+    rating: "80%",
+    precision: 0,
   });
 
-  $(".icon-th-list").on("click", function () {
-    $(".product__item").addClass("list");
-    $(".icon-th-list").addClass("active");
-    $(".icon-th-large").removeClass("active");
-  });
-  $(".icon-th-large").on("click", function () {
-    $(".product__item").removeClass("list");
-    $(".icon-th-large").addClass("active");
-    $(".icon-th-list").removeClass("active");
-  });
-
-  $(".header__btn-menu").on("click", function () {
-    $(".header__box").toggleClass("active");
-  });
-
-  $(".product-one__tabs .tab, .settings__tabs .tab").on(
-    "click",
-    function (event) {
-      var id = $(this).attr("data-id");
-      $(".product-one__tabs, .settings__tabs")
-        .find(".tab-item")
-        .removeClass("active-tab")
-        .hide();
-      $(".product-one__tabs .tabs, .settings__tabs .tabs")
-        .find(".tab")
-        .removeClass("active");
-      $(this).addClass("active");
-      $("#" + id)
-        .addClass("active-tab")
-        .fadeIn();
-      return false;
+  $("#feedback__item-btn-1").click(function () {
+    $(".feedback__item-content-1").toggleClass("active");
+    if ($(".feedback__item-content-1").hasClass("active")) {
+      $("#feedback__item-btn-1").html("Скрыть");
+    } else {
+      $("#feedback__item-btn-1").html("Читать полностью");
     }
-  );
-
-  $('input[type="file"], select').styler();
-
-  $(".menu__btn").on("click", function () {
-    $(".menu__list").slideToggle();
+    return false;
+  });
+  $("#feedback__item-btn-2").click(function () {
+    $(".feedback__item-content-2").toggleClass("active");
+    if ($(".feedback__item-content-2").hasClass("active")) {
+      $("#feedback__item-btn-2").html("Скрыть");
+    } else {
+      $("#feedback__item-btn-2").html("Читать полностью");
+    }
+    return false;
+  });
+  $("#feedback__item-btn-3").click(function () {
+    $(".feedback__item-content-3").toggleClass("active");
+    if ($(".feedback__item-content-3").hasClass("active")) {
+      $("#feedback__item-btn-3").html("Скрыть");
+    } else {
+      $("#feedback__item-btn-3").html("Читать полностью");
+    }
+    return false;
   });
 
-  var mixer = mixitup(".products__inner-box");
+  const easeBoxes = [];
+  document.querySelectorAll(".easeBox").forEach((elem, i) => {
+    const timing = elem.getAttribute("data-timing");
+    easeBoxes.push(
+      basicScroll.create({
+        elem: elem,
+        from: "middle-bottom",
+        to: "bottom-top",
+        direct: true,
+        props: {
+          "--ty": {
+            from: "0",
+            to: "100px",
+            timing: timing,
+          },
+        },
+      })
+    );
+  });
+  easeBoxes.forEach((easeBox) => easeBox.start());
+
+  $('input[type="checkbox"], select').styler();
+
+  $(".header__burger").on("click", function () {
+    $(".header__burger, .header__menu-links").toggleClass("active");
+  });
 });

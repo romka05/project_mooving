@@ -38,6 +38,10 @@ gulp.task("style", function () {
     .src([
       "node_modules/normalize.css/normalize.css",
       "node_modules/slick-carousel/slick/slick.css",
+      "node_modules/wow.js/css/libs/animate.css",
+      "app/css/jquery.rateyo.css",
+      "node_modules/jquery-form-styler/dist/jquery.formstyler.css",
+      "node_modules/jquery-form-styler/dist/jquery.formstyler.theme.css",
     ])
     .pipe(concat("libs.min.css"))
     .pipe(cssmin())
@@ -51,7 +55,11 @@ gulp.task("script", function () {
     gulp
       .src([
         "node_modules/slick-carousel/slick/slick.js",
-        "node_modules/magnific-popup/dist/jquery.magnific-popup.js",
+        "node_modules/wow.js/dist/wow.js",
+        "app/js/jquery.rateyo.js",
+        "app/js/parallax.js",
+        "app/js/basicScroll.js",
+        "node_modules/jquery-form-styler/dist/jquery.formstyler.js",
       ])
       .pipe(concat("libs.min.js"))
       .pipe(uglify())
